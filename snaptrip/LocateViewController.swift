@@ -7,13 +7,29 @@
 //
 
 import UIKit
+import CoreLocation
 
-class LocateViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class LocateViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, CLLocationManagerDelegate {
+    
+    // Declare the location manager
+    var locationManager:CLLocationManager?
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationManager?.delegate = self
+        locationManager?.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        locationManager?.distanceFilter = 50; //meters
+        locationManager?.startUpdatingLocation()
+        locationManager?.requestAlwaysAuthorization()
+        
+        // Do any additional setup after loading the view.
+        if (CLLocationManager.authorizationStatus() == .Denied) {
+            print("Authorization denied!");
+            // Check if it is denied
+        }
 
         // Do any additional setup after loading the view.
         tableView.dataSource = self
@@ -55,7 +71,21 @@ class LocateViewController: UIViewController, UITableViewDataSource, UITableView
     }
     */
     
-
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if (locations.count > 0) {
+            for loc in locations {
+                print("Location: \(loc)")
+            }
+            
+            // print the last one only
+        }
+        print("The numbers in locations: \(locations.count)");
+    }
     
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print("LocationManager failed!")
+    }
+    
+
     
 }
