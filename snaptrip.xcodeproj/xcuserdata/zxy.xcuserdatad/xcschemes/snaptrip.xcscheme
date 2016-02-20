@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9BD7C4EA1C78D16100699FBA"
-               BuildableName = "SnapTrip.temp_caseinsensitive_rename.app"
+               BuildableName = "SnapTrip.app"
                BlueprintName = "snaptrip"
                ReferencedContainer = "container:SnapTrip.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9BD7C4EA1C78D16100699FBA"
-            BuildableName = "SnapTrip.temp_caseinsensitive_rename.app"
+            BuildableName = "SnapTrip.app"
             BlueprintName = "snaptrip"
             ReferencedContainer = "container:SnapTrip.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9BD7C4EA1C78D16100699FBA"
-            BuildableName = "SnapTrip.temp_caseinsensitive_rename.app"
+            BuildableName = "SnapTrip.app"
             BlueprintName = "snaptrip"
             ReferencedContainer = "container:SnapTrip.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9BD7C4EA1C78D16100699FBA"
-            BuildableName = "SnapTrip.temp_caseinsensitive_rename.app"
+            BuildableName = "SnapTrip.app"
             BlueprintName = "snaptrip"
             ReferencedContainer = "container:SnapTrip.xcodeproj">
          </BuildableReference>
