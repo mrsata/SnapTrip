@@ -3,87 +3,165 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--SnapTrip-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="IndexViewController" customModule="snaptrip" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IndexViewController" customModule="SnapTrip_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="9fv-U2-WcG"/>
+                        <viewControllerLayoutGuide type="bottom" id="lvG-HX-aFD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBy-ZZ-k6A">
-                                <rect key="frame" x="177" y="230" width="246" height="140"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBy-ZZ-k6A">
+                                <rect key="frame" x="177" y="264" width="246" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="Snap a Trip">
                                     <color key="titleShadowColor" red="0.987488065734343" green="0.94817270029924339" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ghm-fk-Th0" kind="push" id="nTs-KE-1ea"/>
+                                    <segue destination="ghm-fk-Th0" kind="show" id="nTs-KE-1ea"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WBy-ZZ-k6A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="M0g-hZ-ua1"/>
+                            <constraint firstItem="WBy-ZZ-k6A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lzf-Qa-1Nl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="SnapTrip" id="ICw-5R-p4S"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="337"/>
+            <point key="canvasLocation" x="1057" y="336.99999999999994"/>
         </scene>
         <!--Locate Yourself-->
         <scene sceneID="PRa-a9-kcC">
             <objects>
-                <viewController id="ghm-fk-Th0" customClass="LocateViewController" customModule="snaptrip" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ghm-fk-Th0" customClass="LocateViewController" customModule="SnapTrip_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="DYA-qf-4Rb"/>
-                        <viewControllerLayoutGuide type="bottom" id="86b-wg-fF8"/>
+                        <viewControllerLayoutGuide type="top" id="HJi-1r-daY"/>
+                        <viewControllerLayoutGuide type="bottom" id="0v9-dS-qDp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ACg-mX-9Ti">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wea-Nc-ard">
-                                <rect key="frame" x="226" y="496" width="148" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Search Cities"/>
-                                <connections>
-                                    <segue destination="OQr-4F-RQn" kind="push" id="T2E-9h-flz"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I have found myself. Search nearby cities within:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ap-SM-VmY">
-                                <rect key="frame" x="117" y="408" width="366" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7wh-9W-Dxb">
-                                <rect key="frame" x="0.0" y="357" width="600" height="216"/>
-                            </pickerView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FC9-ol-MNG">
+                                <rect key="frame" x="0.0" y="173" width="600" height="385"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCell" rowHeight="40" id="5yc-fL-zgM" customClass="LabelCell" customModule="SnapTrip_temp_caseinsensitive_rename" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="40"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5yc-fL-zgM" id="D0h-01-RQ0">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="39"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search nearby cities within:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ap-SM-VmY" userLabel="Search nearby cities within:">
+                                                    <rect key="frame" x="145" y="9" width="210" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFD-a4-hNy">
+                                                    <rect key="frame" x="368" y="9" width="88" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="88" id="wHd-tP-RWd"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0Ap-SM-VmY" firstAttribute="leading" secondItem="D0h-01-RQ0" secondAttribute="leading" constant="145" id="7Ha-QT-dUR"/>
+                                                <constraint firstItem="0Ap-SM-VmY" firstAttribute="baseline" secondItem="mFD-a4-hNy" secondAttribute="baseline" id="K1K-bX-n4J"/>
+                                                <constraint firstItem="mFD-a4-hNy" firstAttribute="leading" secondItem="0Ap-SM-VmY" secondAttribute="trailing" constant="13" id="fgR-sj-Wkw"/>
+                                                <constraint firstItem="0Ap-SM-VmY" firstAttribute="centerY" secondItem="D0h-01-RQ0" secondAttribute="centerY" id="rTW-QM-1xc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="109" id="Qd5-Jy-uir" customClass="PickerCell" customModule="SnapTrip_temp_caseinsensitive_rename" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="132" width="600" height="109"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qd5-Jy-uir" id="6Wu-MQ-fds">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="108"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7wh-9W-Dxb">
+                                                    <rect key="frame" x="0.0" y="-47" width="600" height="216"/>
+                                                </pickerView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7wh-9W-Dxb" firstAttribute="leading" secondItem="6Wu-MQ-fds" secondAttribute="leading" id="9mS-Yp-EoP"/>
+                                                <constraint firstAttribute="trailing" secondItem="7wh-9W-Dxb" secondAttribute="trailing" id="V2s-1Y-IDB"/>
+                                                <constraint firstItem="7wh-9W-Dxb" firstAttribute="top" secondItem="6Wu-MQ-fds" secondAttribute="topMargin" constant="-55" id="jvM-8p-fPf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="picker" destination="7wh-9W-Dxb" id="sR1-RS-eg6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="obE-9X-Ynb">
+                                        <rect key="frame" x="0.0" y="241" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="obE-9X-Ynb" id="8om-aX-dLQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wea-Nc-ard">
+                                                    <rect key="frame" x="226" y="4" width="148" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="148" id="Gq8-Vx-5UG"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <state key="normal" title="Search Cities"/>
+                                                    <connections>
+                                                        <segue destination="OQr-4F-RQn" kind="show" id="T2E-9h-flz"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wea-Nc-ard" firstAttribute="top" secondItem="8om-aX-dLQ" secondAttribute="topMargin" constant="-4" id="7nL-5H-lue"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wea-Nc-ard" secondAttribute="bottom" constant="2" id="JBO-5m-Ms2"/>
+                                                <constraint firstItem="wea-Nc-ard" firstAttribute="centerX" secondItem="8om-aX-dLQ" secondAttribute="centerX" id="Xye-Hg-ySZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="FC9-ol-MNG" secondAttribute="trailing" constant="-20" id="LWw-Se-pkC"/>
+                            <constraint firstItem="FC9-ol-MNG" firstAttribute="top" secondItem="HJi-1r-daY" secondAttribute="bottom" constant="109" id="jaI-37-aT9"/>
+                            <constraint firstItem="0v9-dS-qDp" firstAttribute="top" secondItem="FC9-ol-MNG" secondAttribute="bottom" constant="42" id="nmp-25-WNa"/>
+                            <constraint firstItem="FC9-ol-MNG" firstAttribute="leading" secondItem="ACg-mX-9Ti" secondAttribute="leadingMargin" constant="-20" id="pyK-fK-b1Q"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Locate Yourself" id="CHK-mF-gb7"/>
                     <connections>
-                        <outlet property="picker" destination="7wh-9W-Dxb" id="JaN-Ve-Wuf"/>
+                        <outlet property="tableView" destination="FC9-ol-MNG" id="hWD-Qd-1AD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qTF-RM-kR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1735" y="337"/>
+            <point key="canvasLocation" x="1735" y="336"/>
         </scene>
         <!--Choose City-->
         <scene sceneID="aTj-KJ-M7x">
             <objects>
-                <viewController id="OQr-4F-RQn" customClass="CityViewController" customModule="snaptrip" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OQr-4F-RQn" customClass="CityViewController" customModule="SnapTrip_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oI9-NE-OTw"/>
-                        <viewControllerLayoutGuide type="bottom" id="gvC-hE-9HK"/>
+                        <viewControllerLayoutGuide type="top" id="d8t-62-tl8"/>
+                        <viewControllerLayoutGuide type="bottom" id="mIK-ps-Zsj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xw6-HR-3DB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -94,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DXD-4A-Z6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2427" y="337"/>
+            <point key="canvasLocation" x="2427" y="336.99999999999994"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XLL-DF-mzs">
@@ -112,7 +190,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0aK-Gf-qbr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="337"/>
+            <point key="canvasLocation" x="244.99999999999997" y="336.99999999999994"/>
         </scene>
     </scenes>
 </document>

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:snaptrip.xcodeproj">
+      location = "self:/Users/zxy/Swift/snaptrip/SnapTrip.xcodeproj">
    </FileRef>
 </Workspace>

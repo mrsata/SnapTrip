@@ -9,23 +9,23 @@
 import UIKit
 
 class LocateViewController: UIViewController {
-
-    @IBOutlet weak var picker: UIPickerView!
     
-    var pickerData: [String] = [String]()
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        // Input data into the Array:
-        pickerData = ["50 Miles","100 Miles", "150 Miles", "200 Miles", "250 Miles", "300 Miles"]
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return 3
     }
     
 
@@ -38,5 +38,8 @@ class LocateViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 
+    
+    
 }

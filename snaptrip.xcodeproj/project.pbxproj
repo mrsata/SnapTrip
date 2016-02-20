@@ -14,10 +14,12 @@
 		9BD7C4F91C78D16200699FBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD7C4F71C78D16200699FBA /* LaunchScreen.storyboard */; };
 		9BD7C5011C78D48400699FBA /* LocateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C5001C78D48400699FBA /* LocateViewController.swift */; };
 		9BD7C5031C78D4A700699FBA /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C5021C78D4A700699FBA /* CityViewController.swift */; };
+		9BD7C5061C78F31C00699FBA /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C5051C78F31B00699FBA /* LabelCell.swift */; };
+		9BD7C5081C78F33300699FBA /* PickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C5071C78F33300699FBA /* PickerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9BD7C4EB1C78D16200699FBA /* snaptrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snaptrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BD7C4EB1C78D16200699FBA /* SnapTrip.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapTrip.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BD7C4EE1C78D16200699FBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BD7C4F01C78D16200699FBA /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		9BD7C4F31C78D16200699FBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		9BD7C4FA1C78D16200699FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BD7C5001C78D48400699FBA /* LocateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocateViewController.swift; sourceTree = "<group>"; };
 		9BD7C5021C78D4A700699FBA /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		9BD7C5051C78F31B00699FBA /* LabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
+		9BD7C5071C78F33300699FBA /* PickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +46,7 @@
 		9BD7C4E21C78D16100699FBA = {
 			isa = PBXGroup;
 			children = (
-				9BD7C4ED1C78D16200699FBA /* snaptrip */,
+				9BD7C4ED1C78D16200699FBA /* SnapTrip */,
 				9BD7C4EC1C78D16200699FBA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,15 +54,16 @@
 		9BD7C4EC1C78D16200699FBA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9BD7C4EB1C78D16200699FBA /* snaptrip.app */,
+				9BD7C4EB1C78D16200699FBA /* SnapTrip.temp_caseinsensitive_rename.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9BD7C4ED1C78D16200699FBA /* snaptrip */ = {
+		9BD7C4ED1C78D16200699FBA /* SnapTrip */ = {
 			isa = PBXGroup;
 			children = (
 				9BD7C4EE1C78D16200699FBA /* AppDelegate.swift */,
+				9BD7C5041C78F2DD00699FBA /* LocateCells */,
 				9BD7C4F01C78D16200699FBA /* IndexViewController.swift */,
 				9BD7C5001C78D48400699FBA /* LocateViewController.swift */,
 				9BD7C5021C78D4A700699FBA /* CityViewController.swift */,
@@ -67,7 +72,17 @@
 				9BD7C4F71C78D16200699FBA /* LaunchScreen.storyboard */,
 				9BD7C4FA1C78D16200699FBA /* Info.plist */,
 			);
+			name = SnapTrip;
 			path = snaptrip;
+			sourceTree = "<group>";
+		};
+		9BD7C5041C78F2DD00699FBA /* LocateCells */ = {
+			isa = PBXGroup;
+			children = (
+				9BD7C5051C78F31B00699FBA /* LabelCell.swift */,
+				9BD7C5071C78F33300699FBA /* PickerCell.swift */,
+			);
+			name = LocateCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,7 +102,7 @@
 			);
 			name = snaptrip;
 			productName = snaptrip;
-			productReference = 9BD7C4EB1C78D16200699FBA /* snaptrip.app */;
+			productReference = 9BD7C4EB1C78D16200699FBA /* SnapTrip.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -106,7 +121,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9BD7C4E61C78D16100699FBA /* Build configuration list for PBXProject "snaptrip" */;
+			buildConfigurationList = 9BD7C4E61C78D16100699FBA /* Build configuration list for PBXProject "SnapTrip" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -145,7 +160,9 @@
 				9BD7C5011C78D48400699FBA /* LocateViewController.swift in Sources */,
 				9BD7C4F11C78D16200699FBA /* IndexViewController.swift in Sources */,
 				9BD7C4EF1C78D16200699FBA /* AppDelegate.swift in Sources */,
+				9BD7C5061C78F31C00699FBA /* LabelCell.swift in Sources */,
 				9BD7C5031C78D4A700699FBA /* CityViewController.swift in Sources */,
+				9BD7C5081C78F33300699FBA /* PickerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +278,7 @@
 				INFOPLIST_FILE = snaptrip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mrsata.snaptrip;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SnapTrip.temp_caseinsensitive_rename;
 			};
 			name = Debug;
 		};
@@ -272,14 +289,14 @@
 				INFOPLIST_FILE = snaptrip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mrsata.snaptrip;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SnapTrip.temp_caseinsensitive_rename;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9BD7C4E61C78D16100699FBA /* Build configuration list for PBXProject "snaptrip" */ = {
+		9BD7C4E61C78D16100699FBA /* Build configuration list for PBXProject "SnapTrip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9BD7C4FB1C78D16200699FBA /* Debug */,
