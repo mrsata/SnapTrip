@@ -53,67 +53,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FC9-ol-MNG">
-                                <rect key="frame" x="0.0" y="173" width="600" height="385"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" allowsSelection="NO" rowHeight="54" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="FC9-ol-MNG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCell" rowHeight="40" id="5yc-fL-zgM" customClass="LabelCell" customModule="SnapTrip_temp_caseinsensitive_rename" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="40"/>
+                                        <rect key="frame" x="0.0" y="114" width="600" height="40"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5yc-fL-zgM" id="D0h-01-RQ0">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="39"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search nearby cities within:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ap-SM-VmY" userLabel="Search nearby cities within:">
-                                                    <rect key="frame" x="145" y="9" width="210" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFD-a4-hNy">
-                                                    <rect key="frame" x="368" y="9" width="88" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="88" id="wHd-tP-RWd"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="195" y="9" width="210" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="0Ap-SM-VmY" firstAttribute="leading" secondItem="D0h-01-RQ0" secondAttribute="leading" constant="145" id="7Ha-QT-dUR"/>
-                                                <constraint firstItem="0Ap-SM-VmY" firstAttribute="baseline" secondItem="mFD-a4-hNy" secondAttribute="baseline" id="K1K-bX-n4J"/>
-                                                <constraint firstItem="mFD-a4-hNy" firstAttribute="leading" secondItem="0Ap-SM-VmY" secondAttribute="trailing" constant="13" id="fgR-sj-Wkw"/>
-                                                <constraint firstItem="0Ap-SM-VmY" firstAttribute="centerY" secondItem="D0h-01-RQ0" secondAttribute="centerY" id="rTW-QM-1xc"/>
+                                                <constraint firstItem="0Ap-SM-VmY" firstAttribute="centerX" secondItem="D0h-01-RQ0" secondAttribute="centerX" id="Uvf-IQ-Guc"/>
+                                                <constraint firstItem="0Ap-SM-VmY" firstAttribute="centerY" secondItem="D0h-01-RQ0" secondAttribute="centerY" id="hyQ-Dx-9jO"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="109" id="Qd5-Jy-uir" customClass="PickerCell" customModule="SnapTrip_temp_caseinsensitive_rename" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="132" width="600" height="109"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" selectionStyle="default" indentationWidth="10" reuseIdentifier="PickerCell" rowHeight="225" id="Qd5-Jy-uir" customClass="PickerCell" customModule="SnapTrip_temp_caseinsensitive_rename" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="154" width="600" height="225"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qd5-Jy-uir" id="6Wu-MQ-fds">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="108"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="224"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7wh-9W-Dxb">
-                                                    <rect key="frame" x="0.0" y="-47" width="600" height="216"/>
+                                                    <rect key="frame" x="0.0" y="8" width="600" height="216"/>
                                                 </pickerView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="7wh-9W-Dxb" firstAttribute="leading" secondItem="6Wu-MQ-fds" secondAttribute="leading" id="9mS-Yp-EoP"/>
-                                                <constraint firstAttribute="trailing" secondItem="7wh-9W-Dxb" secondAttribute="trailing" id="V2s-1Y-IDB"/>
-                                                <constraint firstItem="7wh-9W-Dxb" firstAttribute="top" secondItem="6Wu-MQ-fds" secondAttribute="topMargin" constant="-55" id="jvM-8p-fPf"/>
+                                                <constraint firstItem="7wh-9W-Dxb" firstAttribute="top" secondItem="6Wu-MQ-fds" secondAttribute="topMargin" id="47u-8s-6C9"/>
+                                                <constraint firstItem="7wh-9W-Dxb" firstAttribute="centerX" secondItem="6Wu-MQ-fds" secondAttribute="centerX" id="6KU-pf-Ur6"/>
+                                                <constraint firstItem="7wh-9W-Dxb" firstAttribute="leading" secondItem="6Wu-MQ-fds" secondAttribute="leadingMargin" constant="-8" id="Zon-7P-nFf"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="7wh-9W-Dxb" secondAttribute="trailing" constant="-8" id="bHZ-uJ-eSe"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="picker" destination="7wh-9W-Dxb" id="sR1-RS-eg6"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="obE-9X-Ynb">
-                                        <rect key="frame" x="0.0" y="241" width="600" height="50"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchCell" rowHeight="45" id="obE-9X-Ynb" customClass="SearchCell" customModule="SnapTrip_temp_caseinsensitive_rename" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="379" width="600" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="obE-9X-Ynb" id="8om-aX-dLQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wea-Nc-ard">
@@ -129,9 +119,9 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="wea-Nc-ard" firstAttribute="top" secondItem="8om-aX-dLQ" secondAttribute="topMargin" constant="-4" id="7nL-5H-lue"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="wea-Nc-ard" secondAttribute="bottom" constant="2" id="JBO-5m-Ms2"/>
-                                                <constraint firstItem="wea-Nc-ard" firstAttribute="centerX" secondItem="8om-aX-dLQ" secondAttribute="centerX" id="Xye-Hg-ySZ"/>
+                                                <constraint firstItem="wea-Nc-ard" firstAttribute="top" secondItem="8om-aX-dLQ" secondAttribute="topMargin" constant="-4" id="AJd-iQ-OhX"/>
+                                                <constraint firstItem="wea-Nc-ard" firstAttribute="centerX" secondItem="8om-aX-dLQ" secondAttribute="centerX" id="Q2a-o0-1bc"/>
+                                                <constraint firstItem="wea-Nc-ard" firstAttribute="centerY" secondItem="8om-aX-dLQ" secondAttribute="centerY" id="Rtb-Uz-tpg"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -140,10 +130,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="FC9-ol-MNG" secondAttribute="trailing" constant="-20" id="LWw-Se-pkC"/>
-                            <constraint firstItem="FC9-ol-MNG" firstAttribute="top" secondItem="HJi-1r-daY" secondAttribute="bottom" constant="109" id="jaI-37-aT9"/>
-                            <constraint firstItem="0v9-dS-qDp" firstAttribute="top" secondItem="FC9-ol-MNG" secondAttribute="bottom" constant="42" id="nmp-25-WNa"/>
-                            <constraint firstItem="FC9-ol-MNG" firstAttribute="leading" secondItem="ACg-mX-9Ti" secondAttribute="leadingMargin" constant="-20" id="pyK-fK-b1Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FC9-ol-MNG" secondAttribute="trailing" constant="-20" id="4Ta-dZ-toU"/>
+                            <constraint firstItem="FC9-ol-MNG" firstAttribute="leading" secondItem="ACg-mX-9Ti" secondAttribute="leadingMargin" constant="-20" id="RmF-nZ-KNK"/>
+                            <constraint firstItem="FC9-ol-MNG" firstAttribute="top" secondItem="ACg-mX-9Ti" secondAttribute="topMargin" id="ysp-8e-wbe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Locate Yourself" id="CHK-mF-gb7"/>

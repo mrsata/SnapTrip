@@ -16,6 +16,8 @@
 		9BD7C5031C78D4A700699FBA /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C5021C78D4A700699FBA /* CityViewController.swift */; };
 		9BD7C5061C78F31C00699FBA /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C5051C78F31B00699FBA /* LabelCell.swift */; };
 		9BD7C5081C78F33300699FBA /* PickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C5071C78F33300699FBA /* PickerCell.swift */; };
+		9BD7C50A1C78FF2F00699FBA /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C5091C78FF2F00699FBA /* SearchCell.swift */; };
+		9BD7C50C1C7909A100699FBA /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C50B1C7909A100699FBA /* LocationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		9BD7C5021C78D4A700699FBA /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		9BD7C5051C78F31B00699FBA /* LabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
 		9BD7C5071C78F33300699FBA /* PickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerCell.swift; sourceTree = "<group>"; };
+		9BD7C5091C78FF2F00699FBA /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		9BD7C50B1C7909A100699FBA /* LocationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +83,10 @@
 		9BD7C5041C78F2DD00699FBA /* LocateCells */ = {
 			isa = PBXGroup;
 			children = (
+				9BD7C50B1C7909A100699FBA /* LocationCell.swift */,
 				9BD7C5051C78F31B00699FBA /* LabelCell.swift */,
 				9BD7C5071C78F33300699FBA /* PickerCell.swift */,
+				9BD7C5091C78FF2F00699FBA /* SearchCell.swift */,
 			);
 			name = LocateCells;
 			sourceTree = "<group>";
@@ -160,8 +166,10 @@
 				9BD7C5011C78D48400699FBA /* LocateViewController.swift in Sources */,
 				9BD7C4F11C78D16200699FBA /* IndexViewController.swift in Sources */,
 				9BD7C4EF1C78D16200699FBA /* AppDelegate.swift in Sources */,
+				9BD7C50A1C78FF2F00699FBA /* SearchCell.swift in Sources */,
 				9BD7C5061C78F31C00699FBA /* LabelCell.swift in Sources */,
 				9BD7C5031C78D4A700699FBA /* CityViewController.swift in Sources */,
+				9BD7C50C1C7909A100699FBA /* LocationCell.swift in Sources */,
 				9BD7C5081C78F33300699FBA /* PickerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LocateViewController: UIViewController {
+class LocateViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -16,6 +16,10 @@ class LocateViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        tableView.dataSource = self
+        tableView.delegate = self
+        self.tableView.estimatedRowHeight = 300.0;
+        self.tableView.rowHeight = UITableViewAutomaticDimension;
         
     }
 
@@ -28,7 +32,19 @@ class LocateViewController: UIViewController {
         return 3
     }
     
-
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+        switch(indexPath.row) {
+        case(0):
+            let cell = tableView.dequeueReusableCellWithIdentifier("LabelCell", forIndexPath: indexPath) as! LabelCell
+            return cell
+        case(1):
+            let cell = tableView.dequeueReusableCellWithIdentifier("PickerCell", forIndexPath: indexPath) as! PickerCell
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCellWithIdentifier("SearchCell", forIndexPath: indexPath) as! SearchCell
+            return cell
+        }
+    }
     /*
     // MARK: - Navigation
 
