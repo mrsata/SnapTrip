@@ -9,7 +9,7 @@
         <!--SnapTrip-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="IndexViewController" customModule="SnapTrip_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IndexViewController" customModule="SnapTrip" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9fv-U2-WcG"/>
                         <viewControllerLayoutGuide type="bottom" id="lvG-HX-aFD"/>
@@ -44,7 +44,7 @@
         <!--Locate Yourself-->
         <scene sceneID="PRa-a9-kcC">
             <objects>
-                <viewController id="ghm-fk-Th0" customClass="LocateViewController" customModule="SnapTrip_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ghm-fk-Th0" customClass="LocateViewController" customModule="SnapTrip" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HJi-1r-daY"/>
                         <viewControllerLayoutGuide type="bottom" id="0v9-dS-qDp"/>
@@ -53,18 +53,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" allowsSelection="NO" rowHeight="54" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="FC9-ol-MNG">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" allowsSelection="NO" rowHeight="300" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="FC9-ol-MNG">
+                                <rect key="frame" x="0.0" y="334" width="600" height="600"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCell" rowHeight="40" id="5yc-fL-zgM" customClass="LabelCell" customModule="SnapTrip_temp_caseinsensitive_rename" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="114" width="600" height="40"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCell" id="5yc-fL-zgM" customClass="LabelCell" customModule="SnapTrip" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="114" width="600" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5yc-fL-zgM" id="D0h-01-RQ0">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="39"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="299"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search nearby cities within:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ap-SM-VmY" userLabel="Search nearby cities within:">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Search nearby cities within:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ap-SM-VmY" userLabel="Search nearby cities within:">
                                                     <rect key="frame" x="195" y="9" width="210" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -77,15 +77,15 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" selectionStyle="default" indentationWidth="10" reuseIdentifier="PickerCell" rowHeight="225" id="Qd5-Jy-uir" customClass="PickerCell" customModule="SnapTrip_temp_caseinsensitive_rename" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="154" width="600" height="225"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" selectionStyle="default" indentationWidth="10" reuseIdentifier="PickerCell" id="Qd5-Jy-uir" customClass="PickerCell" customModule="SnapTrip" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="414" width="600" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qd5-Jy-uir" id="6Wu-MQ-fds">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="224"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="299"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7wh-9W-Dxb">
-                                                    <rect key="frame" x="0.0" y="8" width="600" height="216"/>
+                                                    <rect key="frame" x="0.0" y="8" width="600" height="283"/>
                                                 </pickerView>
                                             </subviews>
                                             <constraints>
@@ -93,20 +93,21 @@
                                                 <constraint firstItem="7wh-9W-Dxb" firstAttribute="centerX" secondItem="6Wu-MQ-fds" secondAttribute="centerX" id="6KU-pf-Ur6"/>
                                                 <constraint firstItem="7wh-9W-Dxb" firstAttribute="leading" secondItem="6Wu-MQ-fds" secondAttribute="leadingMargin" constant="-8" id="Zon-7P-nFf"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="7wh-9W-Dxb" secondAttribute="trailing" constant="-8" id="bHZ-uJ-eSe"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7wh-9W-Dxb" secondAttribute="bottom" id="nLY-I3-oNp"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="picker" destination="7wh-9W-Dxb" id="sR1-RS-eg6"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchCell" rowHeight="45" id="obE-9X-Ynb" customClass="SearchCell" customModule="SnapTrip_temp_caseinsensitive_rename" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="379" width="600" height="45"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchCell" id="obE-9X-Ynb" customClass="SearchCell" customModule="SnapTrip" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="714" width="600" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="obE-9X-Ynb" id="8om-aX-dLQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="299"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wea-Nc-ard">
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wea-Nc-ard">
                                                     <rect key="frame" x="226" y="4" width="148" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="148" id="Gq8-Vx-5UG"/>
@@ -127,11 +128,15 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DGN-fe-hoZ">
+                                <rect key="frame" x="0.0" y="64" width="600" height="385"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="FC9-ol-MNG" secondAttribute="trailing" constant="-20" id="4Ta-dZ-toU"/>
                             <constraint firstItem="FC9-ol-MNG" firstAttribute="leading" secondItem="ACg-mX-9Ti" secondAttribute="leadingMargin" constant="-20" id="RmF-nZ-KNK"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="FC9-ol-MNG" secondAttribute="bottom" id="xoi-De-VvI"/>
                             <constraint firstItem="FC9-ol-MNG" firstAttribute="top" secondItem="ACg-mX-9Ti" secondAttribute="topMargin" id="ysp-8e-wbe"/>
                         </constraints>
                     </view>
@@ -147,7 +152,7 @@
         <!--Choose City-->
         <scene sceneID="aTj-KJ-M7x">
             <objects>
-                <viewController id="OQr-4F-RQn" customClass="CityViewController" customModule="SnapTrip_temp_caseinsensitive_rename" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OQr-4F-RQn" customClass="CityViewController" customModule="SnapTrip" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d8t-62-tl8"/>
                         <viewControllerLayoutGuide type="bottom" id="mIK-ps-Zsj"/>

@@ -18,7 +18,7 @@ class LocateViewController: UIViewController, UITableViewDataSource, UITableView
         // Do any additional setup after loading the view.
         tableView.dataSource = self
         tableView.delegate = self
-        self.tableView.estimatedRowHeight = 300.0;
+        self.tableView.estimatedRowHeight = 100.0;
         self.tableView.rowHeight = UITableViewAutomaticDimension;
         
     }
