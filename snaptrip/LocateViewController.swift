@@ -7,10 +7,21 @@
 //
 
 import UIKit
+import MapKit
 
 class LocateViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var mapView: MKMapView!
+    
+    var userLocation: CLLocation?
+    var locManager = CLLocationManager()
+    var currentLocation: CLLocation?
+    var NSlatitude: NSString = ""
+    var NSlongtitude: NSString = ""
+    var latitude: Float!
+    var longtitude: Float!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +31,17 @@ class LocateViewController: UIViewController, UITableViewDataSource, UITableView
         tableView.delegate = self
         self.tableView.estimatedRowHeight = 100.0;
         self.tableView.rowHeight = UITableViewAutomaticDimension;
+                
+        locManager.requestWhenInUseAuthorization()
+        if( CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedWhenInUse ||
+            CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedAlways){
+                currentLocation = locManager.location
+        }
+        userLocation = mapView.userLocation.location!;
+        NSlatitude = "\(userLocation!.coordinate.latitude)";
+        NSlongtitude = "\(userLocation!.coordinate.longitude)";
+        latitude = NSlatitude.floatValue
+        longtitude = NSlongtitude.floatValue
         
     }
 

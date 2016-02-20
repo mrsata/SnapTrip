@@ -128,20 +128,25 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DGN-fe-hoZ">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DGN-fe-hoZ">
                                 <rect key="frame" x="0.0" y="64" width="600" height="385"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="DGN-fe-hoZ" firstAttribute="leading" secondItem="ACg-mX-9Ti" secondAttribute="leadingMargin" constant="-20" id="2a5-Py-vXo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DGN-fe-hoZ" secondAttribute="trailing" constant="-20" id="3h8-88-eUd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FC9-ol-MNG" secondAttribute="trailing" constant="-20" id="4Ta-dZ-toU"/>
                             <constraint firstItem="FC9-ol-MNG" firstAttribute="leading" secondItem="ACg-mX-9Ti" secondAttribute="leadingMargin" constant="-20" id="RmF-nZ-KNK"/>
+                            <constraint firstItem="DGN-fe-hoZ" firstAttribute="top" secondItem="HJi-1r-daY" secondAttribute="bottom" id="ftf-5j-ccC"/>
+                            <constraint firstItem="0v9-dS-qDp" firstAttribute="top" secondItem="DGN-fe-hoZ" secondAttribute="bottom" constant="151" id="gJp-ei-d1f"/>
                             <constraint firstAttribute="bottomMargin" secondItem="FC9-ol-MNG" secondAttribute="bottom" id="xoi-De-VvI"/>
                             <constraint firstItem="FC9-ol-MNG" firstAttribute="top" secondItem="ACg-mX-9Ti" secondAttribute="topMargin" id="ysp-8e-wbe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Locate Yourself" id="CHK-mF-gb7"/>
                     <connections>
+                        <outlet property="mapView" destination="DGN-fe-hoZ" id="7O2-wz-H9f"/>
                         <outlet property="tableView" destination="FC9-ol-MNG" id="hWD-Qd-1AD"/>
                     </connections>
                 </viewController>
