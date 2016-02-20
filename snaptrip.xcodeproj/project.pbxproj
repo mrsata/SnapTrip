@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		9BD7C4EF1C78D16200699FBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C4EE1C78D16200699FBA /* AppDelegate.swift */; };
-		9BD7C4F11C78D16200699FBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C4F01C78D16200699FBA /* ViewController.swift */; };
+		9BD7C4F11C78D16200699FBA /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C4F01C78D16200699FBA /* IndexViewController.swift */; };
 		9BD7C4F41C78D16200699FBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD7C4F21C78D16200699FBA /* Main.storyboard */; };
 		9BD7C4F61C78D16200699FBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BD7C4F51C78D16200699FBA /* Assets.xcassets */; };
 		9BD7C4F91C78D16200699FBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD7C4F71C78D16200699FBA /* LaunchScreen.storyboard */; };
+		9BD7C5011C78D48400699FBA /* LocateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C5001C78D48400699FBA /* LocateViewController.swift */; };
+		9BD7C5031C78D4A700699FBA /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C5021C78D4A700699FBA /* CityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9BD7C4EB1C78D16200699FBA /* snaptrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snaptrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BD7C4EE1C78D16200699FBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9BD7C4F01C78D16200699FBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BD7C4F01C78D16200699FBA /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
 		9BD7C4F31C78D16200699FBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BD7C4F51C78D16200699FBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BD7C4F81C78D16200699FBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BD7C4FA1C78D16200699FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BD7C5001C78D48400699FBA /* LocateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocateViewController.swift; sourceTree = "<group>"; };
+		9BD7C5021C78D4A700699FBA /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				9BD7C4EE1C78D16200699FBA /* AppDelegate.swift */,
-				9BD7C4F01C78D16200699FBA /* ViewController.swift */,
+				9BD7C4F01C78D16200699FBA /* IndexViewController.swift */,
+				9BD7C5001C78D48400699FBA /* LocateViewController.swift */,
+				9BD7C5021C78D4A700699FBA /* CityViewController.swift */,
 				9BD7C4F21C78D16200699FBA /* Main.storyboard */,
 				9BD7C4F51C78D16200699FBA /* Assets.xcassets */,
 				9BD7C4F71C78D16200699FBA /* LaunchScreen.storyboard */,
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BD7C4F11C78D16200699FBA /* ViewController.swift in Sources */,
+				9BD7C5011C78D48400699FBA /* LocateViewController.swift in Sources */,
+				9BD7C4F11C78D16200699FBA /* IndexViewController.swift in Sources */,
 				9BD7C4EF1C78D16200699FBA /* AppDelegate.swift in Sources */,
+				9BD7C5031C78D4A700699FBA /* CityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +295,7 @@
 				9BD7C4FF1C78D16200699FBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
