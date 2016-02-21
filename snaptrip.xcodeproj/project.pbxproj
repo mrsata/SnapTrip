@@ -19,9 +19,11 @@
 		9BD7C50A1C78FF2F00699FBA /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C5091C78FF2F00699FBA /* SearchCell.swift */; };
 		9BD7C5101C79400C00699FBA /* OriginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C50F1C79400C00699FBA /* OriginViewController.swift */; };
 		9BD7C5121C79975400699FBA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD7C5111C79975400699FBA /* CoreLocation.framework */; };
+		FACC5AED771C81B46AF5E2A0 /* Pods_snaptrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC33203CF0CE2C797613CE2 /* Pods_snaptrip.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E5A6B34CEA1F208B1216D0B /* Pods-snaptrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-snaptrip.release.xcconfig"; path = "Pods/Target Support Files/Pods-snaptrip/Pods-snaptrip.release.xcconfig"; sourceTree = "<group>"; };
 		9BD7C4EB1C78D16200699FBA /* SnapTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BD7C4EE1C78D16200699FBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BD7C4F01C78D16200699FBA /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		9BD7C5091C78FF2F00699FBA /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		9BD7C50F1C79400C00699FBA /* OriginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginViewController.swift; sourceTree = "<group>"; };
 		9BD7C5111C79975400699FBA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DAC33203CF0CE2C797613CE2 /* Pods_snaptrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_snaptrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0DFA32600086008F41800BA /* Pods-snaptrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-snaptrip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-snaptrip/Pods-snaptrip.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BD7C5121C79975400699FBA /* CoreLocation.framework in Frameworks */,
+				FACC5AED771C81B46AF5E2A0 /* Pods_snaptrip.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +61,8 @@
 				9BD7C5111C79975400699FBA /* CoreLocation.framework */,
 				9BD7C4ED1C78D16200699FBA /* SnapTrip */,
 				9BD7C4EC1C78D16200699FBA /* Products */,
+				D35B18366F14D532FDB67C1A /* Pods */,
+				9E6D8005C62146BE804D5FF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +102,23 @@
 			name = LocateCells;
 			sourceTree = "<group>";
 		};
+		9E6D8005C62146BE804D5FF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAC33203CF0CE2C797613CE2 /* Pods_snaptrip.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35B18366F14D532FDB67C1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0DFA32600086008F41800BA /* Pods-snaptrip.debug.xcconfig */,
+				6E5A6B34CEA1F208B1216D0B /* Pods-snaptrip.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,9 +126,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BD7C4FD1C78D16200699FBA /* Build configuration list for PBXNativeTarget "snaptrip" */;
 			buildPhases = (
+				F022497B3CE680E3CF6FDBCF /* Check Pods Manifest.lock */,
 				9BD7C4E71C78D16100699FBA /* Sources */,
 				9BD7C4E81C78D16100699FBA /* Frameworks */,
 				9BD7C4E91C78D16100699FBA /* Resources */,
+				C3A73746A4B59F1F2CA1D59A /* Embed Pods Frameworks */,
+				BA571493E935F9B84CF005E5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,6 +188,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BA571493E935F9B84CF005E5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-snaptrip/Pods-snaptrip-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3A73746A4B59F1F2CA1D59A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-snaptrip/Pods-snaptrip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F022497B3CE680E3CF6FDBCF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9BD7C4E71C78D16100699FBA /* Sources */ = {
@@ -285,6 +360,7 @@
 		};
 		9BD7C4FE1C78D16200699FBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0DFA32600086008F41800BA /* Pods-snaptrip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = snaptrip/Info.plist;
@@ -296,6 +372,7 @@
 		};
 		9BD7C4FF1C78D16200699FBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E5A6B34CEA1F208B1216D0B /* Pods-snaptrip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = snaptrip/Info.plist;
