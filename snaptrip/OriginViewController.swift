@@ -15,7 +15,6 @@ class OriginViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var mapView: MKMapView!
     
     var locManager = CLLocationManager()
-    var currentLocation: CLLocation?
     var userLocation: CLLocation?
     var latitude: Double!
     var longitude: Double!
@@ -35,14 +34,15 @@ class OriginViewController: UIViewController, CLLocationManagerDelegate {
         // Check if it is denied
         if (CLLocationManager.authorizationStatus() == .Denied) {
             print("Authorization denied!");
+            userLocation = CLLocation(latitude: 40.11428435, longitude: -88.22459354)
         }
         // Check if it is authorized
         if( CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedWhenInUse ||
             CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedAlways){
-                currentLocation = locManager.location
+                userLocation = locManager.location
         }
         
-        centerMapOnLocation(currentLocation!)
+        centerMapOnLocation(userLocation!)
         
     }
 

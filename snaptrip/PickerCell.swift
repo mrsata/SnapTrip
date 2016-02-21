@@ -13,6 +13,8 @@ class PickerCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDataSource{
     @IBOutlet weak var picker: UIPickerView!
     
     var pickerData: [String] = [String]()
+    var distance: Int = 50
+    let distances:[Int] = [50, 100, 150, 200, 300, 500]
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,7 +24,7 @@ class PickerCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDataSource{
         self.picker.delegate = self
         self.picker.dataSource = self
         // Input data into the Array:
-        pickerData = ["50 Miles","100 Miles", "150 Miles", "200 Miles", "250 Miles", "300 Miles"]
+        pickerData = ["50 Miles","100 Miles", "150 Miles", "200 Miles", "300 Miles", "500 Miles"]
         picker.selectRow(0, inComponent: 0, animated: false)
     }
 
@@ -51,7 +53,7 @@ class PickerCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDataSource{
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         // This method is triggered whenever the user makes a change to the picker selection.
         // The parameter named row and component represents what was selected.
-        // picker.reloadAllComponents()
+        distance = distances[row]
     }
 
 
