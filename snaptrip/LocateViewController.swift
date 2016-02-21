@@ -10,34 +10,16 @@ import UIKit
 
 class LocateViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    // Declare the location manager
-    
-    
     @IBOutlet weak var tableView: UITableView!
-        
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         // Do any additional setup after loading the view.
         tableView.dataSource = self
         tableView.delegate = self
         self.tableView.estimatedRowHeight = 100.0;
         self.tableView.rowHeight = UITableViewAutomaticDimension;
-//                
-//        locManager.requestWhenInUseAuthorization()
-//        if( CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedWhenInUse ||
-//            CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedAlways){
-//                currentLocation = locManager.location
-//        }
-//        userLocation = mapView.userLocation.location!;
-//        NSlatitude = "\(userLocation!.coordinate.latitude)";
-//        NSlongtitude = "\(userLocation!.coordinate.longitude)";
-//        latitude = NSlatitude.floatValue
-//        longtitude = NSlongtitude.floatValue
-        
-        
         
     }
 
@@ -63,6 +45,7 @@ class LocateViewController: UIViewController, UITableViewDataSource, UITableView
             return cell
         }
     }
+    
     /*
     // MARK: - Navigation
 
@@ -72,6 +55,5 @@ class LocateViewController: UIViewController, UITableViewDataSource, UITableView
         // Pass the selected object to the new view controller.
     }
     */
-    
     
 }

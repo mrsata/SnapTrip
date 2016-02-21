@@ -18,6 +18,7 @@
 		9BD7C5081C78F33300699FBA /* PickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C5071C78F33300699FBA /* PickerCell.swift */; };
 		9BD7C50A1C78FF2F00699FBA /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C5091C78FF2F00699FBA /* SearchCell.swift */; };
 		9BD7C5101C79400C00699FBA /* OriginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C50F1C79400C00699FBA /* OriginViewController.swift */; };
+		9BD7C5121C79975400699FBA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD7C5111C79975400699FBA /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		9BD7C5071C78F33300699FBA /* PickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerCell.swift; sourceTree = "<group>"; };
 		9BD7C5091C78FF2F00699FBA /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		9BD7C50F1C79400C00699FBA /* OriginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginViewController.swift; sourceTree = "<group>"; };
+		9BD7C5111C79975400699FBA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BD7C5121C79975400699FBA /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +53,7 @@
 		9BD7C4E21C78D16100699FBA = {
 			isa = PBXGroup;
 			children = (
+				9BD7C5111C79975400699FBA /* CoreLocation.framework */,
 				9BD7C4ED1C78D16200699FBA /* SnapTrip */,
 				9BD7C4EC1C78D16200699FBA /* Products */,
 			);

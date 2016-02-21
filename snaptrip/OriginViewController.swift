@@ -13,42 +13,37 @@ import CoreLocation
 class OriginViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
-    var locationManager:CLLocationManager?
-    var locations:[CLLocation]?
     
-    var userLocation: CLLocation?
     var locManager = CLLocationManager()
     var currentLocation: CLLocation?
-    var NSlatitude: NSString = ""
-    var NSlongtitude: NSString = ""
-    var latitude: Float!
-    var longtitude: Float!
+    var userLocation: CLLocation?
+    var latitude: Double!
+    var longitude: Double!
+    let regionRadius: CLLocationDistance = 500
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        locationManager?.delegate = self
-        locationManager?.desiredAccuracy = kCLLocationAccuracyHundredMeters
-        locationManager?.distanceFilter = 50; //meters
-        locationManager?.startUpdatingLocation()
-        locationManager?.requestAlwaysAuthorization()
-        
-        // Do any additional setup after loading the view.
+        locManager.delegate = self
+        locManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        locManager.distanceFilter = 50; //meters
+        locManager.requestAlwaysAuthorization()
+        locManager.requestWhenInUseAuthorization()
+        locManager.startUpdatingLocation()
+
+        // Check if it is denied
         if (CLLocationManager.authorizationStatus() == .Denied) {
             print("Authorization denied!");
-            // Check if it is denied
+        }
+        // Check if it is authorized
+        if( CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedWhenInUse ||
+            CLLocationManager.authorizationStatus() == CLAuthorizationStatus.AuthorizedAlways){
+                currentLocation = locManager.location
         }
         
-        let initialLocation = locations![locations!.count - 1]
-        let regionRadius: CLLocationDistance = 1000
-        func centerMapOnLocation(location: CLLocation) {
-            let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-                regionRadius * 2.0, regionRadius * 2.0)
-            mapView.setRegion(coordinateRegion, animated: true)
-        }
-        centerMapOnLocation(initialLocation)
-
+        centerMapOnLocation(currentLocation!)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,7 +51,6 @@ class OriginViewController: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -67,15 +61,23 @@ class OriginViewController: UIViewController, CLLocationManagerDelegate {
     }
     */
     
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
+            regionRadius * 2.0, regionRadius * 2.0)
+        mapView.setRegion(coordinateRegion, animated: true)
+    }
+
+    func locationManager(locManager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if (locations.count > 0) {
             for loc in locations {
                 print("Location: \(loc)")
             }
-            
-            // print the last one only
         }
         print("The numbers in locations: \(locations.count)");
+        latitude = locations[locations.count-1].coordinate.latitude
+        longitude = locations[locations.count-1].coordinate.longitude
+        userLocation = CLLocation(latitude: latitude, longitude: longitude)
+        centerMapOnLocation(userLocation!)
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
