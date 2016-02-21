@@ -14,6 +14,7 @@ class OriginViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     var locationManager:CLLocationManager?
+    var locations:[CLLocation]?
     
     var userLocation: CLLocation?
     var locManager = CLLocationManager()
@@ -39,7 +40,7 @@ class OriginViewController: UIViewController, CLLocationManagerDelegate {
             // Check if it is denied
         }
         
-        let initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
+        let initialLocation = locations![locations!.count - 1]
         let regionRadius: CLLocationDistance = 1000
         func centerMapOnLocation(location: CLLocation) {
             let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
