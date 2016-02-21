@@ -19,6 +19,7 @@
 		9BD7C50A1C78FF2F00699FBA /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C5091C78FF2F00699FBA /* SearchCell.swift */; };
 		9BD7C5101C79400C00699FBA /* OriginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C50F1C79400C00699FBA /* OriginViewController.swift */; };
 		9BD7C5121C79975400699FBA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD7C5111C79975400699FBA /* CoreLocation.framework */; };
+		9BD7C5141C7A103D00699FBA /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C5131C7A103D00699FBA /* CityCell.swift */; };
 		FACC5AED771C81B46AF5E2A0 /* Pods_snaptrip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC33203CF0CE2C797613CE2 /* Pods_snaptrip.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		9BD7C5091C78FF2F00699FBA /* SearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		9BD7C50F1C79400C00699FBA /* OriginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OriginViewController.swift; sourceTree = "<group>"; };
 		9BD7C5111C79975400699FBA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9BD7C5131C7A103D00699FBA /* CityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
 		DAC33203CF0CE2C797613CE2 /* Pods_snaptrip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_snaptrip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0DFA32600086008F41800BA /* Pods-snaptrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-snaptrip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-snaptrip/Pods-snaptrip.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 				9BD7C5001C78D48400699FBA /* LocateViewController.swift */,
 				9BD7C5021C78D4A700699FBA /* CityViewController.swift */,
 				9BD7C4F21C78D16200699FBA /* Main.storyboard */,
+				9BD7C5131C7A103D00699FBA /* CityCell.swift */,
 				9BD7C4F51C78D16200699FBA /* Assets.xcassets */,
 				9BD7C4F71C78D16200699FBA /* LaunchScreen.storyboard */,
 				9BD7C4FA1C78D16200699FBA /* Info.plist */,
@@ -247,6 +250,7 @@
 				9BD7C4EF1C78D16200699FBA /* AppDelegate.swift in Sources */,
 				9BD7C50A1C78FF2F00699FBA /* SearchCell.swift in Sources */,
 				9BD7C5101C79400C00699FBA /* OriginViewController.swift in Sources */,
+				9BD7C5141C7A103D00699FBA /* CityCell.swift in Sources */,
 				9BD7C5061C78F31C00699FBA /* LabelCell.swift in Sources */,
 				9BD7C5031C78D4A700699FBA /* CityViewController.swift in Sources */,
 				9BD7C5081C78F33300699FBA /* PickerCell.swift in Sources */,
