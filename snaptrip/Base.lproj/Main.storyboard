@@ -25,7 +25,7 @@
                                     <color key="titleShadowColor" red="0.987488065734343" green="0.94817270029924339" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ghm-fk-Th0" kind="show" id="nTs-KE-1ea"/>
+                                    <segue destination="SvA-5z-xqB" kind="push" id="tdt-c3-IAp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,7 +41,52 @@
             </objects>
             <point key="canvasLocation" x="1057" y="336.99999999999994"/>
         </scene>
-        <!--Locate Yourself-->
+        <!--Set Origin-->
+        <scene sceneID="GQy-b2-6it">
+            <objects>
+                <viewController id="SvA-5z-xqB" customClass="OriginViewController" customModule="SnapTrip" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gUv-md-Out"/>
+                        <viewControllerLayoutGuide type="bottom" id="NIp-IY-24v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1KF-uf-t2w">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KK1-v8-zq8">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NIp-IY-24v" firstAttribute="top" secondItem="KK1-v8-zq8" secondAttribute="bottom" id="RFZ-f9-ZQ4"/>
+                            <constraint firstItem="KK1-v8-zq8" firstAttribute="top" secondItem="gUv-md-Out" secondAttribute="bottom" id="XJd-Df-wq7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KK1-v8-zq8" secondAttribute="trailing" constant="-20" id="bw5-iW-CiL"/>
+                            <constraint firstItem="KK1-v8-zq8" firstAttribute="leading" secondItem="1KF-uf-t2w" secondAttribute="leadingMargin" constant="-20" id="d3M-FM-Q28"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Set Origin" id="e5t-dV-ERL">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="fPc-59-obc">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XQW-0U-82S">
+                                <rect key="frame" x="447" y="7" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="ghm-fk-Th0" kind="push" id="bGa-bz-9Hj"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="KK1-v8-zq8" id="XGK-Ak-1ut"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PEs-OS-0MK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="1064"/>
+        </scene>
+        <!--Search Cities-->
         <scene sceneID="PRa-a9-kcC">
             <objects>
                 <viewController id="ghm-fk-Th0" customClass="LocateViewController" customModule="SnapTrip" customModuleProvider="target" sceneMemberID="viewController">
@@ -53,8 +98,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" allowsSelection="NO" rowHeight="300" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="FC9-ol-MNG">
-                                <rect key="frame" x="0.0" y="334" width="600" height="600"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" allowsSelection="NO" rowHeight="300" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="FC9-ol-MNG">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCell" id="5yc-fL-zgM" customClass="LabelCell" customModule="SnapTrip" customModuleProvider="target">
@@ -65,8 +110,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Search nearby cities within:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ap-SM-VmY" userLabel="Search nearby cities within:">
-                                                    <rect key="frame" x="195" y="9" width="210" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="182" y="9" width="263" height="56"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -128,31 +173,23 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DGN-fe-hoZ">
-                                <rect key="frame" x="0.0" y="64" width="600" height="385"/>
-                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="DGN-fe-hoZ" firstAttribute="leading" secondItem="ACg-mX-9Ti" secondAttribute="leadingMargin" constant="-20" id="2a5-Py-vXo"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="DGN-fe-hoZ" secondAttribute="trailing" constant="-20" id="3h8-88-eUd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="FC9-ol-MNG" secondAttribute="trailing" constant="-20" id="4Ta-dZ-toU"/>
-                            <constraint firstItem="FC9-ol-MNG" firstAttribute="leading" secondItem="ACg-mX-9Ti" secondAttribute="leadingMargin" constant="-20" id="RmF-nZ-KNK"/>
-                            <constraint firstItem="DGN-fe-hoZ" firstAttribute="top" secondItem="HJi-1r-daY" secondAttribute="bottom" id="ftf-5j-ccC"/>
-                            <constraint firstItem="0v9-dS-qDp" firstAttribute="top" secondItem="DGN-fe-hoZ" secondAttribute="bottom" constant="151" id="gJp-ei-d1f"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="FC9-ol-MNG" secondAttribute="bottom" id="xoi-De-VvI"/>
-                            <constraint firstItem="FC9-ol-MNG" firstAttribute="top" secondItem="ACg-mX-9Ti" secondAttribute="topMargin" id="ysp-8e-wbe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FC9-ol-MNG" secondAttribute="trailing" constant="-20" id="8Zb-jg-GC2"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="FC9-ol-MNG" secondAttribute="bottom" id="9wo-Uo-p9J"/>
+                            <constraint firstItem="FC9-ol-MNG" firstAttribute="top" secondItem="ACg-mX-9Ti" secondAttribute="topMargin" id="UtA-ga-WPY"/>
+                            <constraint firstItem="FC9-ol-MNG" firstAttribute="leading" secondItem="ACg-mX-9Ti" secondAttribute="leadingMargin" constant="-20" id="xHq-rK-fyz"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Locate Yourself" id="CHK-mF-gb7"/>
+                    <navigationItem key="navigationItem" title="Search Cities" id="CHK-mF-gb7"/>
                     <connections>
-                        <outlet property="mapView" destination="DGN-fe-hoZ" id="7O2-wz-H9f"/>
                         <outlet property="tableView" destination="FC9-ol-MNG" id="hWD-Qd-1AD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qTF-RM-kR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1735" y="336"/>
+            <point key="canvasLocation" x="1810" y="336"/>
         </scene>
         <!--Choose City-->
         <scene sceneID="aTj-KJ-M7x">
@@ -171,7 +208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DXD-4A-Z6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2427" y="336.99999999999994"/>
+            <point key="canvasLocation" x="1810" y="1064"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XLL-DF-mzs">
