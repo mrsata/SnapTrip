@@ -9,11 +9,14 @@
 import UIKit
 
 class CityViewController: UIViewController {
+    
+    var distance: Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        print(distance)
     }
 
     override func didReceiveMemoryWarning() {

@@ -12,6 +12,8 @@ class LocateViewController: UIViewController, UITableViewDataSource, UITableView
     
     @IBOutlet weak var tableView: UITableView!
     
+    var distance: Int?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,14 +48,23 @@ class LocateViewController: UIViewController, UITableViewDataSource, UITableView
         }
     }
     
-    /*
+    func updateDistance (distance: Int) {
+        self.distance = distance
+    }
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        // Create a variable that you want to send
+        let newDistance = self.distance
+        
+        // Create a new variable to store the instance of PlayerTableViewController
+        let destinationVC = segue.destinationViewController as! CityViewController
+        destinationVC.distance = newDistance
+        
     }
-    */
     
 }

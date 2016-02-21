@@ -20,6 +20,8 @@ class PickerCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDataSource{
         super.awakeFromNib()
         // Initialization code
         
+        setDistance()
+        
         // Connect data:
         self.picker.delegate = self
         self.picker.dataSource = self
@@ -54,7 +56,13 @@ class PickerCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDataSource{
         // This method is triggered whenever the user makes a change to the picker selection.
         // The parameter named row and component represents what was selected.
         distance = distances[row]
+        setDistance()
     }
-
+    
+    func setDistance () {
+        if let lVC = UIApplication.sharedApplication().keyWindow?.rootViewController?.childViewControllers.last as? LocateViewController {
+            lVC.distance = self.distance
+        }
+    }
 
 }
