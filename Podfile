@@ -5,5 +5,6 @@ use_frameworks!
 
 target 'snaptrip' do
     pod 'AFNetworking'
+    pod 'BDBOAuth1Manager'
 end
 
