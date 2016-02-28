@@ -59,6 +59,7 @@ class PickerCell: UITableViewCell, UIPickerViewDelegate, UIPickerViewDataSource{
         setDistance()
     }
     
+    // Set lvc.distance as this.distance
     func setDistance () {
         if let lVC = UIApplication.sharedApplication().keyWindow?.rootViewController?.childViewControllers.last as? LocateViewController {
             lVC.distance = self.distance

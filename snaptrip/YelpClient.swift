@@ -1,15 +1,9 @@
 //
 //  YelpClient.swift
-//  Yelp
+//  snaptrip
 //
-//  Created by Timothy Lee on 9/19/14.
-//  Changed by Guocheng Wei on 2/21/16
-//  Copyright (c) 2014 Timothy Lee. All rights reserved.
-//
-
-
-// Business : rating        number
-//            review_count  number
+//  Created by Guocheng Wei on 2/21/16
+//  Copyright © 2016 mrsata. All rights reserved.
 
 // /v2/business/{id}        GET     Lookup business information by id.
 
@@ -21,6 +15,9 @@ let yelpConsumerKey = "IDtK3KrZDyz4EtDgFAEdog"
 let yelpConsumerSecret = "8bRD6bJe7tFTrT8aCpQBpT-ulPk"
 let yelpToken = "KBL4zf_uAjgn2Dp_0UVC_fxQAZl5Dsbh"
 let yelpTokenSecret = "KhLEsrl8vo2SjBHF1BSK8feY5sw"
+
+var latitude: Double?
+var longitude: Double?
 
 enum YelpSortMode: Int {
     case BestMatched = 0, Distance, HighestRated
@@ -64,7 +61,7 @@ class YelpClient: BDBOAuth1RequestOperationManager {
         // For additional parameters, see http://www.yelp.com/developers/documentation/v2/search_api
         
         // TODO: We need to change the ll to the hackillinois
-        var parameters: [String : AnyObject] = ["term": term, "ll": "40.107632, -88.2502165"]
+        var parameters: [String : AnyObject] = ["term": term, "ll": "\(latitude), \(longitude)"]
         
         if sort != nil {
             parameters["sort"] = sort!.rawValue

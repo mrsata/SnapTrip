@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B6665FC1C828CE20066F05F /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6665FB1C828CE20066F05F /* Business.swift */; };
 		9BD7C4EF1C78D16200699FBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C4EE1C78D16200699FBA /* AppDelegate.swift */; };
 		9BD7C4F11C78D16200699FBA /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7C4F01C78D16200699FBA /* IndexViewController.swift */; };
 		9BD7C4F41C78D16200699FBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD7C4F21C78D16200699FBA /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		6E5A6B34CEA1F208B1216D0B /* Pods-snaptrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-snaptrip.release.xcconfig"; path = "Pods/Target Support Files/Pods-snaptrip/Pods-snaptrip.release.xcconfig"; sourceTree = "<group>"; };
+		9B6665FB1C828CE20066F05F /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		9BD7C4EB1C78D16200699FBA /* SnapTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BD7C4EE1C78D16200699FBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BD7C4F01C78D16200699FBA /* IndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B6665FD1C828CE90066F05F /* Yelp */ = {
+			isa = PBXGroup;
+			children = (
+				9BD7C5151C7A2C5900699FBA /* YelpClient.swift */,
+				9B6665FB1C828CE20066F05F /* Business.swift */,
+			);
+			name = Yelp;
+			sourceTree = "<group>";
+		};
 		9BD7C4E21C78D16100699FBA = {
 			isa = PBXGroup;
 			children = (
@@ -83,12 +94,12 @@
 			children = (
 				9BD7C4EE1C78D16200699FBA /* AppDelegate.swift */,
 				9BD7C5171C7A2C6400699FBA /* Cells */,
+				9B6665FD1C828CE90066F05F /* Yelp */,
 				9BD7C4F01C78D16200699FBA /* IndexViewController.swift */,
 				9BD7C50F1C79400C00699FBA /* OriginViewController.swift */,
 				9BD7C5001C78D48400699FBA /* LocateViewController.swift */,
 				9BD7C5021C78D4A700699FBA /* CityViewController.swift */,
 				9BD7C4F21C78D16200699FBA /* Main.storyboard */,
-				9BD7C5151C7A2C5900699FBA /* YelpClient.swift */,
 				9BD7C4F51C78D16200699FBA /* Assets.xcassets */,
 				9BD7C4F71C78D16200699FBA /* LaunchScreen.storyboard */,
 				9BD7C4FA1C78D16200699FBA /* Info.plist */,
@@ -264,6 +275,7 @@
 				9BD7C5101C79400C00699FBA /* OriginViewController.swift in Sources */,
 				9BD7C5141C7A103D00699FBA /* CityCell.swift in Sources */,
 				9BD7C5061C78F31C00699FBA /* LabelCell.swift in Sources */,
+				9B6665FC1C828CE20066F05F /* Business.swift in Sources */,
 				9BD7C5031C78D4A700699FBA /* CityViewController.swift in Sources */,
 				9BD7C5081C78F33300699FBA /* PickerCell.swift in Sources */,
 			);
