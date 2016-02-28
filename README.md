@@ -6,6 +6,15 @@
 
 This is a toy project for HackIllinois 2016.
 
+## TODO
+
+1. Use the Google map to record routes and sites
+2. Optimize the Region section
+3. Utilize the Hotel and Plane Api
+4. Design an appealing UI
+5. Brainstorm some interesting features
+6. Test (GrizzHacks)
+
 ## License
 
     Copyright [2016] [Han Liu]

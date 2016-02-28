@@ -179,7 +179,7 @@
 				TargetAttributes = {
 					9BD7C4EA1C78D16100699FBA = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 477CNH7T4Q;
+						DevelopmentTeam = 255426LV9Z;
 					};
 				};
 			};
@@ -391,10 +391,14 @@
 			baseConfigurationReference = F0DFA32600086008F41800BA /* Pods-snaptrip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = snaptrip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mrsata.snaptrip;
+				PRODUCT_BUNDLE_IDENTIFIER = walterwei170;
 				PRODUCT_NAME = SnapTrip;
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -403,10 +407,14 @@
 			baseConfigurationReference = 6E5A6B34CEA1F208B1216D0B /* Pods-snaptrip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = snaptrip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mrsata.snaptrip;
+				PRODUCT_BUNDLE_IDENTIFIER = walterwei170;
 				PRODUCT_NAME = SnapTrip;
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};

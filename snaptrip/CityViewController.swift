@@ -16,7 +16,7 @@ class CityViewController: UIViewController, UITableViewDataSource, UITableViewDe
     var distance: Int?
     var places: NSDictionary?
     var cities: [NSDictionary]?
-    let count: String = "20"
+    let count: String = "10"
 
     override func viewDidLoad() {
         super.viewDidLoad()
