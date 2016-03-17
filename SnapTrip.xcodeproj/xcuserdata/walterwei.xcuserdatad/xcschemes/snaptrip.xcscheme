@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9BD7C4EA1C78D16100699FBA"
-               BuildableName = "SnapTrip.temp_caseinsensitive_rename.app"
+               BuildableName = "SnapTrip.app"
                BlueprintName = "snaptrip"
-               ReferencedContainer = "container:snaptrip.xcodeproj">
+               ReferencedContainer = "container:SnapTrip.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9BD7C4EA1C78D16100699FBA"
-            BuildableName = "SnapTrip.temp_caseinsensitive_rename.app"
+            BuildableName = "SnapTrip.app"
             BlueprintName = "snaptrip"
-            ReferencedContainer = "container:snaptrip.xcodeproj">
+            ReferencedContainer = "container:SnapTrip.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9BD7C4EA1C78D16100699FBA"
-            BuildableName = "SnapTrip.temp_caseinsensitive_rename.app"
+            BuildableName = "SnapTrip.app"
             BlueprintName = "snaptrip"
-            ReferencedContainer = "container:snaptrip.xcodeproj">
+            ReferencedContainer = "container:SnapTrip.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9BD7C4EA1C78D16100699FBA"
-            BuildableName = "SnapTrip.temp_caseinsensitive_rename.app"
+            BuildableName = "SnapTrip.app"
             BlueprintName = "snaptrip"
-            ReferencedContainer = "container:snaptrip.xcodeproj">
+            ReferencedContainer = "container:SnapTrip.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
